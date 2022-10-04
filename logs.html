@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ОТИ</title>
+</head>
+<body>
+  <table class="striped">
+    <thead>
+      <th>ID</th>
+      <th>ФИО</th>
+      <th>Строка</th>
+    </thead>
+    {{ range .Studenttext }}
+      <tr>
+          <td>{{ .Id }}</td>
+          <td>{{ .Name }}</td>
+          <td>{{ .Text }}</td>
+      </tr>
+      {{ end }}
+  </table>
+</body>
+</html>
